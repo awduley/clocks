@@ -1,0 +1,12 @@
+{
+  "name": "clocks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w src/scss/main.scss -o src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

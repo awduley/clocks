@@ -1,0 +1,134 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  height: 100%;
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.6rem; }
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #1171c0, #033155); }
+
+.clock-analog__container {
+  width: 50rem;
+  height: 50rem;
+  background: #5c5321;
+  border-radius: 50%;
+  position: relative; }
+  .clock-analog__container--md {
+    width: 48.6rem;
+    height: 48.6rem;
+    background: linear-gradient(to bottom left, #251901, #1b0101);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 1rem #000; }
+  .clock-analog__container--sm {
+    position: absolute;
+    width: 43rem;
+    height: 43rem;
+    border-radius: 50%;
+    background: #5c5321;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 1rem 2px #000; }
+  .clock-analog__container--face {
+    position: absolute;
+    width: 40rem;
+    height: 40rem;
+    border-radius: 50%;
+    background: url("./assets/img/clock-face.jpg");
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: inset 0 0 1rem .4rem #000;
+    position: relative; }
+  .clock-analog__container .nathan-container {
+    position: absolute;
+    left: 50%;
+    top: 28%;
+    text-transform: uppercase;
+    transform: translateX(-50%);
+    text-align: center; }
+    .clock-analog__container .nathan-container__heading {
+      font-size: 1.2rem; }
+  .clock-analog__container .hand {
+    --rotation: 0;
+    width: .4rem;
+    background: #000;
+    position: absolute;
+    transform-origin: bottom;
+    left: 50%;
+    bottom: 50%;
+    transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg)); }
+  .clock-analog__container .clock-analog__hour-hand {
+    height: 10rem; }
+  .clock-analog__container .clock-analog__minute-hand {
+    height: 14rem; }
+  .clock-analog__container .clock-analog__second-hand {
+    width: 2px;
+    height: 15rem;
+    background: #008080; }
+  .clock-analog__container .clock-analog__round-piece {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: #5c5321;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%); }
+    .clock-analog__container .clock-analog__round-piece::after {
+      content: '';
+      position: absolute;
+      width: 2.4rem;
+      height: 2.4rem;
+      background: #000;
+      border-radius: 50%;
+      top: 0;
+      left: 0;
+      transform: translate(12%, 12%); }
+  .clock-analog__container .number {
+    --rotation: 0;
+    position: absolute;
+    font-size: 3rem;
+    transform: rotate(var(--rotation)) scaleX(0.7);
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    font-weight: bold; }
+  .clock-analog__container .number1 {
+    --rotation: 30deg; }
+  .clock-analog__container .number2 {
+    --rotation: 60deg; }
+  .clock-analog__container .number3 {
+    --rotation: 90deg; }
+  .clock-analog__container .number4 {
+    --rotation: 120deg; }
+  .clock-analog__container .number5 {
+    --rotation: 150deg; }
+  .clock-analog__container .number6 {
+    --rotation: 180deg; }
+  .clock-analog__container .number7 {
+    --rotation: 210deg; }
+  .clock-analog__container .number8 {
+    --rotation: 240deg; }
+  .clock-analog__container .number9 {
+    --rotation: 270deg; }
+  .clock-analog__container .number10 {
+    --rotation: 300deg; }
+  .clock-analog__container .number11 {
+    --rotation: 330deg; }
