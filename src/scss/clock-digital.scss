@@ -1,0 +1,360 @@
+// Digital clock styles
+.clock-digital__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 1rem;
+
+  &--clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 54rem;
+    height: 30rem;
+    background: #000;
+    border-radius: 2rem;
+  }
+
+  &--face {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 51rem;
+    height: 27rem;
+    background: rgba(255, 255, 255, .05);
+    border-radius: 2rem;
+    box-shadow: inset 0 0 1rem 3px #000;
+  }
+
+  &--number {
+    width: 10rem;
+    height: 22rem;
+    position: relative;
+    margin: 0 1rem;
+    transform: scale(.9);
+  }
+
+  .unit {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    height: 0;
+    width: 10rem;
+    border-bottom: .75rem solid $unit-color;
+    border-right: .75rem solid transparent;
+    border-left: .75rem solid transparent;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      height: 0;
+      width: 10rem;
+      border-bottom: .75rem solid $unit-color;
+      border-right: .75rem solid transparent;
+      border-left: .75rem solid transparent;
+      transform: rotate(180deg) translate(-8%, -92%);
+    }
+  }
+
+  .clock-digital__container--hours-left {
+
+    .unit-top-top {
+      top: 0%;
+      right: 1%;
+
+      .hidden {
+        visibility: hidden;
+      }
+    }
+
+    .unit-top-right {
+      top: 25%;
+      right: -56%;
+      transform: rotate(90deg);
+
+      .hidden {
+        visibility: hidden;
+      }
+    } 
+
+    .unit-middle {
+      top: 47%;
+      right: 1%;
+
+      .hidden {
+        visibility: hidden;
+      }
+    }
+
+    .unit-top-left {
+      top: 25%;
+      left: -54.6%;
+      transform: rotate(90deg);
+
+      .hidden {
+        visibility: hidden;
+      }
+    }
+
+    .unit-bottom-right {
+      top: 72%;
+      right: -56%;
+      transform: rotate(90deg);
+
+      .hidden {
+        visibility: hidden;
+      }
+    }
+
+    .unit-bottom-bottom {
+      top: 94%;
+      right: 1%;
+
+      .hidden {
+        visibility: hidden;
+      }
+    }
+
+    .unit-bottom-left {
+      top: 72%;
+      left: -55%;
+      transform: rotate(90deg);
+
+      .hidden {
+        visibility: hidden;
+      }
+    }
+  }
+
+  .clock-digital__container--hours-right {
+
+    .unit-top-top {
+      top: 0%;
+      right: 1%;
+
+      .hidden {
+        visibility: hidden;
+      }
+    }
+
+    .unit-top-right {
+      top: 25%;
+      right: -56%;
+      transform: rotate(90deg);
+
+      .hidden {
+        visibility: hidden;
+      }
+    } 
+
+    .unit-middle {
+      top: 47%;
+      right: 1%;
+
+      .hidden {
+        visibility: hidden;
+      }
+    }
+
+    .unit-top-left {
+      top: 25%;
+      left: -54.6%;
+      transform: rotate(90deg);
+
+      .hidden {
+        visibility: hidden;
+      }
+    }
+
+    .unit-bottom-right {
+      top: 72%;
+      right: -56%;
+      transform: rotate(90deg);
+
+      .hidden {
+        visibility: hidden;
+      }
+    }
+
+    .unit-bottom-bottom {
+      top: 94%;
+      right: 1%;
+
+      .hidden {
+        visibility: hidden;
+      }
+    }
+
+    .unit-bottom-left {
+      top: 72%;
+      left: -55%;
+      transform: rotate(90deg);
+
+      .hidden {
+        visibility: hidden;
+      }
+    }
+    
+  }
+
+  .clock-digital__container--colon {
+    display: flex;
+    flex-direction: column;
+
+    .unit-top-top,
+    .unit-bottom-bottom {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      background: $unit-color;
+      margin: 1.4rem 1rem;
+      transform: translateX(-10%);
+
+      .hidden {
+        visibility: hidden;
+        background: red;
+      }
+    }
+  }
+
+  .clock-digital__container--minutes-left {
+
+    .unit-top-top {
+      top: 0%;
+      right: 1%;
+
+      .hidden {
+        visibility: hidden;
+      }
+    }
+
+    .unit-top-right {
+      top: 25%;
+      right: -56%;
+      transform: rotate(90deg);
+
+      .hidden {
+        visibility: hidden;
+      }
+    } 
+
+    .unit-middle {
+      top: 47%;
+      right: 1%;
+
+      .hidden {
+        visibility: hidden;
+      }
+    }
+
+    .unit-top-left {
+      top: 25%;
+      left: -54.6%;
+      transform: rotate(90deg);
+
+      .hidden {
+        visibility: hidden;
+      }
+    }
+
+    .unit-bottom-right {
+      top: 72%;
+      right: -56%;
+      transform: rotate(90deg);
+
+      .hidden {
+        visibility: hidden;
+      }
+    }
+
+    .unit-bottom-bottom {
+      top: 94%;
+      right: 1%;
+
+      .hidden {
+        visibility: hidden;
+      }
+    }
+
+    .unit-bottom-left {
+      top: 72%;
+      left: -55%;
+      transform: rotate(90deg);
+
+      .hidden {
+        visibility: hidden;
+      }
+    }
+  }
+
+  .clock-digital__container--minutes-right {
+
+    .unit-top-top {
+      top: 0%;
+      right: 1%;
+
+      .hidden {
+        visibility: hidden;
+      }
+    }
+
+    .unit-top-right {
+      top: 25%;
+      right: -56%;
+      transform: rotate(90deg);
+
+      .hidden {
+        visibility: hidden;
+      }
+    } 
+
+    .unit-middle {
+      top: 47%;
+      right: 1%;
+
+      .hidden {
+        visibility: hidden;
+      }
+    }
+
+    .unit-top-left {
+      top: 25%;
+      left: -54.6%;
+      transform: rotate(90deg);
+
+      .hidden {
+        visibility: hidden;
+      }
+    }
+
+    .unit-bottom-right {
+      top: 72%;
+      right: -56%;
+      transform: rotate(90deg);
+
+      .hidden {
+        visibility: hidden;
+      }
+    }
+
+    .unit-bottom-bottom {
+      top: 94%;
+      right: 1%;
+
+      .hidden {
+        visibility: hidden;
+      }
+    }
+
+    .unit-bottom-left {
+      top: 72%;
+      left: -55%;
+      transform: rotate(90deg);
+
+      .hidden {
+        visibility: hidden;
+      }
+    }
+  }
+}   

@@ -1,9 +1,11 @@
+// Analog clock styles
 .clock-analog__container {
   width: 50rem;
   height: 50rem;
   background: rgb(92, 83, 33);
   border-radius: 50%;
   position: relative;
+  margin: 4rem 1rem;
 
   &--md {
     width: 48.6rem;
@@ -157,4 +159,4 @@
   .number11 {
     --rotation: 330deg;
   }
-}  
+} 

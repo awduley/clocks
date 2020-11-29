@@ -24,7 +24,8 @@ body {
   height: 50rem;
   background: #5c5321;
   border-radius: 50%;
-  position: relative; }
+  position: relative;
+  margin: 4rem 1rem; }
   .clock-analog__container--md {
     width: 48.6rem;
     height: 48.6rem;
@@ -132,3 +133,222 @@ body {
     --rotation: 300deg; }
   .clock-analog__container .number11 {
     --rotation: 330deg; }
+
+.clock-digital__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 1rem; }
+  .clock-digital__container--clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 54rem;
+    height: 30rem;
+    background: #000;
+    border-radius: 2rem; }
+  .clock-digital__container--face {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 51rem;
+    height: 27rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 2rem;
+    box-shadow: inset 0 0 1rem 3px #000; }
+  .clock-digital__container--number {
+    width: 10rem;
+    height: 22rem;
+    position: relative;
+    margin: 0 1rem;
+    transform: scale(0.9); }
+  .clock-digital__container .unit {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    height: 0;
+    width: 10rem;
+    border-bottom: 0.75rem solid #268ead;
+    border-right: .75rem solid transparent;
+    border-left: .75rem solid transparent; }
+    .clock-digital__container .unit::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      height: 0;
+      width: 10rem;
+      border-bottom: 0.75rem solid #268ead;
+      border-right: .75rem solid transparent;
+      border-left: .75rem solid transparent;
+      transform: rotate(180deg) translate(-8%, -92%); }
+  .clock-digital__container .clock-digital__container--hours-left .unit-top-top {
+    top: 0%;
+    right: 1%; }
+    .clock-digital__container .clock-digital__container--hours-left .unit-top-top .hidden {
+      visibility: hidden; }
+  .clock-digital__container .clock-digital__container--hours-left .unit-top-right {
+    top: 25%;
+    right: -56%;
+    transform: rotate(90deg); }
+    .clock-digital__container .clock-digital__container--hours-left .unit-top-right .hidden {
+      visibility: hidden; }
+  .clock-digital__container .clock-digital__container--hours-left .unit-middle {
+    top: 47%;
+    right: 1%; }
+    .clock-digital__container .clock-digital__container--hours-left .unit-middle .hidden {
+      visibility: hidden; }
+  .clock-digital__container .clock-digital__container--hours-left .unit-top-left {
+    top: 25%;
+    left: -54.6%;
+    transform: rotate(90deg); }
+    .clock-digital__container .clock-digital__container--hours-left .unit-top-left .hidden {
+      visibility: hidden; }
+  .clock-digital__container .clock-digital__container--hours-left .unit-bottom-right {
+    top: 72%;
+    right: -56%;
+    transform: rotate(90deg); }
+    .clock-digital__container .clock-digital__container--hours-left .unit-bottom-right .hidden {
+      visibility: hidden; }
+  .clock-digital__container .clock-digital__container--hours-left .unit-bottom-bottom {
+    top: 94%;
+    right: 1%; }
+    .clock-digital__container .clock-digital__container--hours-left .unit-bottom-bottom .hidden {
+      visibility: hidden; }
+  .clock-digital__container .clock-digital__container--hours-left .unit-bottom-left {
+    top: 72%;
+    left: -55%;
+    transform: rotate(90deg); }
+    .clock-digital__container .clock-digital__container--hours-left .unit-bottom-left .hidden {
+      visibility: hidden; }
+  .clock-digital__container .clock-digital__container--hours-right .unit-top-top {
+    top: 0%;
+    right: 1%; }
+    .clock-digital__container .clock-digital__container--hours-right .unit-top-top .hidden {
+      visibility: hidden; }
+  .clock-digital__container .clock-digital__container--hours-right .unit-top-right {
+    top: 25%;
+    right: -56%;
+    transform: rotate(90deg); }
+    .clock-digital__container .clock-digital__container--hours-right .unit-top-right .hidden {
+      visibility: hidden; }
+  .clock-digital__container .clock-digital__container--hours-right .unit-middle {
+    top: 47%;
+    right: 1%; }
+    .clock-digital__container .clock-digital__container--hours-right .unit-middle .hidden {
+      visibility: hidden; }
+  .clock-digital__container .clock-digital__container--hours-right .unit-top-left {
+    top: 25%;
+    left: -54.6%;
+    transform: rotate(90deg); }
+    .clock-digital__container .clock-digital__container--hours-right .unit-top-left .hidden {
+      visibility: hidden; }
+  .clock-digital__container .clock-digital__container--hours-right .unit-bottom-right {
+    top: 72%;
+    right: -56%;
+    transform: rotate(90deg); }
+    .clock-digital__container .clock-digital__container--hours-right .unit-bottom-right .hidden {
+      visibility: hidden; }
+  .clock-digital__container .clock-digital__container--hours-right .unit-bottom-bottom {
+    top: 94%;
+    right: 1%; }
+    .clock-digital__container .clock-digital__container--hours-right .unit-bottom-bottom .hidden {
+      visibility: hidden; }
+  .clock-digital__container .clock-digital__container--hours-right .unit-bottom-left {
+    top: 72%;
+    left: -55%;
+    transform: rotate(90deg); }
+    .clock-digital__container .clock-digital__container--hours-right .unit-bottom-left .hidden {
+      visibility: hidden; }
+  .clock-digital__container .clock-digital__container--colon {
+    display: flex;
+    flex-direction: column; }
+    .clock-digital__container .clock-digital__container--colon .unit-top-top,
+    .clock-digital__container .clock-digital__container--colon .unit-bottom-bottom {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      background: #268ead;
+      margin: 1.4rem 1rem;
+      transform: translateX(-10%); }
+      .clock-digital__container .clock-digital__container--colon .unit-top-top .hidden,
+      .clock-digital__container .clock-digital__container--colon .unit-bottom-bottom .hidden {
+        visibility: hidden;
+        background: red; }
+  .clock-digital__container .clock-digital__container--minutes-left .unit-top-top {
+    top: 0%;
+    right: 1%; }
+    .clock-digital__container .clock-digital__container--minutes-left .unit-top-top .hidden {
+      visibility: hidden; }
+  .clock-digital__container .clock-digital__container--minutes-left .unit-top-right {
+    top: 25%;
+    right: -56%;
+    transform: rotate(90deg); }
+    .clock-digital__container .clock-digital__container--minutes-left .unit-top-right .hidden {
+      visibility: hidden; }
+  .clock-digital__container .clock-digital__container--minutes-left .unit-middle {
+    top: 47%;
+    right: 1%; }
+    .clock-digital__container .clock-digital__container--minutes-left .unit-middle .hidden {
+      visibility: hidden; }
+  .clock-digital__container .clock-digital__container--minutes-left .unit-top-left {
+    top: 25%;
+    left: -54.6%;
+    transform: rotate(90deg); }
+    .clock-digital__container .clock-digital__container--minutes-left .unit-top-left .hidden {
+      visibility: hidden; }
+  .clock-digital__container .clock-digital__container--minutes-left .unit-bottom-right {
+    top: 72%;
+    right: -56%;
+    transform: rotate(90deg); }
+    .clock-digital__container .clock-digital__container--minutes-left .unit-bottom-right .hidden {
+      visibility: hidden; }
+  .clock-digital__container .clock-digital__container--minutes-left .unit-bottom-bottom {
+    top: 94%;
+    right: 1%; }
+    .clock-digital__container .clock-digital__container--minutes-left .unit-bottom-bottom .hidden {
+      visibility: hidden; }
+  .clock-digital__container .clock-digital__container--minutes-left .unit-bottom-left {
+    top: 72%;
+    left: -55%;
+    transform: rotate(90deg); }
+    .clock-digital__container .clock-digital__container--minutes-left .unit-bottom-left .hidden {
+      visibility: hidden; }
+  .clock-digital__container .clock-digital__container--minutes-right .unit-top-top {
+    top: 0%;
+    right: 1%; }
+    .clock-digital__container .clock-digital__container--minutes-right .unit-top-top .hidden {
+      visibility: hidden; }
+  .clock-digital__container .clock-digital__container--minutes-right .unit-top-right {
+    top: 25%;
+    right: -56%;
+    transform: rotate(90deg); }
+    .clock-digital__container .clock-digital__container--minutes-right .unit-top-right .hidden {
+      visibility: hidden; }
+  .clock-digital__container .clock-digital__container--minutes-right .unit-middle {
+    top: 47%;
+    right: 1%; }
+    .clock-digital__container .clock-digital__container--minutes-right .unit-middle .hidden {
+      visibility: hidden; }
+  .clock-digital__container .clock-digital__container--minutes-right .unit-top-left {
+    top: 25%;
+    left: -54.6%;
+    transform: rotate(90deg); }
+    .clock-digital__container .clock-digital__container--minutes-right .unit-top-left .hidden {
+      visibility: hidden; }
+  .clock-digital__container .clock-digital__container--minutes-right .unit-bottom-right {
+    top: 72%;
+    right: -56%;
+    transform: rotate(90deg); }
+    .clock-digital__container .clock-digital__container--minutes-right .unit-bottom-right .hidden {
+      visibility: hidden; }
+  .clock-digital__container .clock-digital__container--minutes-right .unit-bottom-bottom {
+    top: 94%;
+    right: 1%; }
+    .clock-digital__container .clock-digital__container--minutes-right .unit-bottom-bottom .hidden {
+      visibility: hidden; }
+  .clock-digital__container .clock-digital__container--minutes-right .unit-bottom-left {
+    top: 72%;
+    left: -55%;
+    transform: rotate(90deg); }
+    .clock-digital__container .clock-digital__container--minutes-right .unit-bottom-left .hidden {
+      visibility: hidden; }

@@ -3,7 +3,8 @@
   height: 50rem;
   background: #5c5321;
   border-radius: 50%;
-  position: relative; }
+  position: relative;
+  margin: 4rem 1rem; }
   .clock-analog__container--md {
     width: 48.6rem;
     height: 48.6rem;
